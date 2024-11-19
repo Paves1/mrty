@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.rdp {
+  --rdp-cell-size: 40px;
+  --rdp-accent-color: #059669;
+  --rdp-background-color: #e2e8f0;
+  margin: 0;
+}
+
+.rdp-day_selected:not([disabled]), 
+.rdp-day_selected:focus:not([disabled]), 
+.rdp-day_selected:active:not([disabled]), 
+.rdp-day_selected:hover:not([disabled]) {
+  background-color: var(--rdp-accent-color);
+}
+
+.rdp-day:hover:not([disabled]) {
+  background-color: #f1f5f9;
+}
